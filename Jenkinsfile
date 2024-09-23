@@ -38,14 +38,14 @@ pipeline{
             }
         }
         
-        stage('Stage 6 : Ansible Deployment') {
-            steps {
-                ansiblePlaybook colorized: true,
-                credentialsId: 'localhost',
-                installation: 'Ansible',
-                inventory: 'inventory',
-                playbook: 'Deploy-Calculator.yml'
-            }
-        }
+        // stage('Stage 6 : Ansible Deployment') {
+        //     steps {
+        //         ansiblePlaybook colorized: true,
+        //         credentialsId: 'localhost',
+        //         installation: 'Ansible',
+        //         inventory: 'inventory',
+        //         playbook: 'Deploy-Calculator.yml'
+        //     }
+        // }
     }
 }
