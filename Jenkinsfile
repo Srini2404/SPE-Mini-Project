@@ -5,12 +5,12 @@ pipeline{
     }
     agent any
     stages{
-        // stage("Stage 1 : Git Clone"){
-        //     steps{
-        //         git "https://github.com/Srini2404/SPE-Mini-Project.git"
-        //     }
-        // }
-        
+        stage("Stage 1 : Git Clone"){
+            steps{
+                git "https://github.com/Srini2404/SPE-Mini-Project.git"
+            }
+        }
+        // Updated GitHub Secrets
         stage("Stage 2 : Maven Build"){
             steps{
                 sh 'mvn clean install'
