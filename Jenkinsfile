@@ -16,7 +16,7 @@ pipeline{
                 sh 'mvn clean install'
             }
         }
-        
+        // Please Work
         stage("Stage 3 : Build Docker Image"){
             steps{
                 sh "docker build -t srinivasan2404/calculator:latest ."
